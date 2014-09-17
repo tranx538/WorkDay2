@@ -12,8 +12,9 @@ Public Class Form1
         num2 = CDbl(st2)
 
         ' Your code here
+        largerNum = Math.Max(num1, num2)
 
-        txtResult.Text = "Not implemented yet"
+        txtResult.Text = CStr(largerNum)
     End Sub
 
 End Class
