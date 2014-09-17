@@ -11,10 +11,14 @@ Public Class Form1
         num1 = CDbl(st1)
         num2 = CDbl(st2)
 
-        ' Your code here
-        largerNum = Math.Max(num1, num2)
+        'Alternative option:
+        'largerNum = Math.Max(num1, num2)
+
+        If num1 > num2 Then largerNum = num1 Else _
+        largerNum = num2
 
         txtResult.Text = CStr(largerNum)
+
     End Sub
 
 End Class
